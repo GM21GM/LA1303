@@ -4,12 +4,12 @@ Unity 2D Street Fighter
 
 Giovanni Innamorato, Giuliano Martullo, Steven Salie
 
-| Datum    | Version | Zusammenfassung |
-| -------- | ------- | --------------- |
-| 20.09.23 | 0.0.1   |                 |
-| 18.10.23 | 0.0.2   |                 |
-| 25.10.23 | 0.1     |                 |
-| 01.11.23 | 1.0.0   |                 |
+| Datum    | Version | Zusammenfassung                                         |
+| -------- | ------- | ------------------------------------------------------- |
+| 24.01.24 | 0.0.1   | API kann einen neu erstellten Namen als response geben. |
+| 18.10.23 | 0.0.2   |                                                         |
+| 25.10.23 | 0.1     |                                                         |
+| 01.11.23 | 1.0.0   |                                                         |
 
 ## 1 Informieren
 
@@ -19,9 +19,14 @@ Wir erstellen eine API die Namen zufällig zusammenstellt, sie speichert und ver
 
 ### 1.2 User Stories
 
-| US-№ | Verbindlichkeit | Typ | Beschreibung                                                                                                         |
-| ---- | --------------- | --- | -------------------------------------------------------------------------------------------------------------------- |
-| 1    | Muss            | F   | Als ein Spieler möchte ich, dass das Player-Movement funktioniert, damit ich meinen Charakter im Spiel steuern kann. |
+| US-№ | Verbindlichkeit | Typ | Beschreibung                                                                                                          |
+| ---- | --------------- | --- | --------------------------------------------------------------------------------------------------------------------- |
+| 1    | Muss            | F   | Als ein User möchte ich, dass ich mit einer GET Request eine Neu Erstellte Person als Response erhalte.               |
+| 2    | Muss            | F   | Als ein User möchte ich, dass ich mit einer GET Request eine bestimmte oder alle Personen als Response erhalte.       |
+| 3    | Muss            | F   | Als ein User möchte ich, dass ich mit einem POST Request eine neue Personen erstellen können.                         |
+| 4    | Muss            | F   | Als ein User möchte ich, dass ich mit einem POST Request eine bestehende Personen verändern können.                   |
+| 5    | Muss            | F   | Als ein User möchte ich, dass die bestehenden Personen und alle veränderungen gespeichert werden auf einer Datenbank. |
+| 6    | Muss            | F   | Als ein User möchte ich, dass ich mit einer DELETE Request eine bestehende Personen löschen kann.                     |
 
 ### 1.3 Testfälle
 
