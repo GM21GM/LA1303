@@ -25,16 +25,9 @@ Wir erstellen eine API die Namen zufällig zusammenstellt, sie speichert und ver
 
 ### 1.3 Testfälle
 
-| TC-№ | Ausgangslage                                                          | Eingabe                                                                             | Erwartete Ausgabe                                                                                             |
-| ---- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| 1.1  | Das Spiel läuft.                                                      | Der Spieler versucht, den Charakter zu bewegen.                                     | Der Charakter bewegt sich entsprechend der Eingabe des Spielers.                                              |
-| 2.1  | Das Spiel befindet sich im Hauptmenü.                                 | Der Spieler klickt auf die Starttaste im Hauptmenü.                                 | Das Spiel startet und die Spielumgebung wird geladen.                                                         |
-| 3.1  | Das Spiel läuft und der Spielercharakter hat einen Gesundheitsbalken. | Der Spielercharakter erleidet Schaden.                                              | Der Gesundheitsbalken des Charakters wird aktualisiert, um den verlorenen Gesundheitszustand anzuzeigen.      |
-| 4.1  | Das Spiel läuft.                                                      | Der Spieler beobachtet die Bewegungen des Charakters.                               | Der Charakter zeigt flüssige und ansprechende Animationen entsprechend seinen Aktionen.                       |
-| 5.1  | Das Spiel läuft und der Spielercharakter kann gegen Gegner kämpfen.   | Der Spielercharakter greift einen Gegner an.                                        | Der Gegner erleidet Schaden, die Healthbar sinkt.                                                             |
-| 6.1  | Das Spiel läuft und der Spieler hat das Spiel beendet.                | Der Spieler beendet das Spiel oder erreicht ein Game Over.                          | Die Game Over Scene wird angezeigt, um den Spieler über das Spielende zu informieren.                         |
-| 8.1  | Der Spielercharakter kann sich bewegen.                               | Der Spieler versucht, den Charakter ducken zu lassen und sich langsamer zu bewegen. | Der Charakter duckt sich und bewegt sich langsamer, um es dem Spieler zu ermöglichen, Angriffen auszuweichen. |
-|      |                                                                       |                                                                                     |                                                                                                               |
+| TC-№ | Ausgangslage     | Eingabe                                         | Erwartete Ausgabe                                                |
+| ---- | ---------------- | ----------------------------------------------- | ---------------------------------------------------------------- |
+| 1.1  | Das Spiel läuft. | Der Spieler versucht, den Charakter zu bewegen. | Der Charakter bewegt sich entsprechend der Eingabe des Spielers. |
 
 ## 2 Planen
 
