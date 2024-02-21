@@ -14,8 +14,6 @@ Giovanni Innamorato, Giuliano Martullo
 
 ### 1.1 Ihr Projekt
 
-Wir erstellen eine API die Namen zufällig zusammenstellt, sie speichert und verändert werden können.
-
 ### 1.2 User Stories
 
 | US-№ | Verbindlichkeit | Typ | Beschreibung                                                                                                          |
@@ -23,15 +21,20 @@ Wir erstellen eine API die Namen zufällig zusammenstellt, sie speichert und ver
 | 1    | Muss            | F   | Als ein User möchte ich, dass ich mit einer GET Request eine Neu Erstellte Person als Response erhalte.               |
 | 2    | Muss            | F   | Als ein User möchte ich, dass ich mit einer GET Request eine bestimmte oder alle Personen als Response erhalte.       |
 | 3    | Muss            | F   | Als ein User möchte ich, dass ich mit einem POST Request eine neue Personen erstellen können.                         |
-| 4    | Muss            | F   | Als ein User möchte ich, dass ich mit einem POST Request eine bestehende Personen verändern können.                   |
+| 4    | Muss            | F   | Als ein User möchte ich, dass ich mit einem PUT Request eine bestehende Personen verändern können.                   |
 | 5    | Muss            | F   | Als ein User möchte ich, dass die bestehenden Personen und alle veränderungen gespeichert werden auf einer Datenbank. |
 | 6    | Muss            | F   | Als ein User möchte ich, dass ich mit einer DELETE Request eine bestehende Personen löschen kann.                     |
 
-### 1.3 Testfälle
 
-| TC-№ | Ausgangslage                           | Eingabe | Erwartete Ausgabe |
-| ---- | -------------------------------------- | ------- | ----------------- |
-| 1.1  | API gestartet, Swagger / Postman offen |         |                   |
+| TC-№ | Ausgangslage     | Eingabe                                         | Erwartete Ausgabe                                                |
+| ---- | ---------------- | ----------------------------------------------- | ---------------------------------------------------------------- |
+| 1.1  | https://localhost:7211/api/Person/NewPerson| Execute | 201  |
+| 2.1| |https://localhost:7211/api/Person  |Execute |201 Alle Personen|
+|2.2| https://localhost:7211/api/Person/31|Id: 31 Execute|201 Person mit Id 31|
+|3.1|https://localhost:7211/api/Person| Daten der Person nach Vorlage| 201|
+|4.1|https://localhost:7211/api/Person/11| Daten der Person| 201|
+|5.1|https://localhost:7211/api/Person/NewPerson|Execute| Person auf Datenbank mit neuer Id gespeichert|
+|6.1|https://localhost:7211/api/Person/49|Id:12 Execute| 204|
 
 ## 2 Planen
 
@@ -93,12 +96,14 @@ Wir erstellen eine API die Namen zufällig zusammenstellt, sie speichert und ver
 
 ### Testprotokoll
 
-| TC-№ | Datum | Resultat | Tester   |
-| ---- | ----- | -------- | -------- |
-| 1.1  | 08.11 | OK       | Giuliano |
-| 2.1  | 08.11 | OK       | Giuliano |
-| 3.1  | 08.11 | OK       | Giuliano |
-| 4.1  | 08.11 | OK       | Giuliano |
-| 5.1  | 08.11 | OK       | Giuliano |
-| 6.1  | 08.11 | OK       | Giuliano |
-| 8.1  | 08.11 | NOK      | Giuliano |
+| TC-№ | Datum | Resultat | Tester   |Testumgebung|Kommentar|
+| ---- | ----- | -------- | -------- |Swagger||
+| 1.1  | 21.02 | OK       | Giuliano |Swagger||
+| 2.1  | 21.02 | OK       | Giuliano |Swagger||
+| 2.2  | 21.02 | OK       | Giuliano |Swagger||
+| 3.1  | 21.02 | NOK      | Giuliano |Swagger|Put funktioniert nicht, Fehler konnte nicht behoben werden.|
+| 4.1  | 21.02 | OK       | Giuliano |Swagger||
+| 5.1  | 21.02 | OK       | Giuliano |Swagger + Microsoft SQL||
+| 6.1  | 21.02 | OK       | Giuliano |Swagger||
+
+
