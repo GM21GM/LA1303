@@ -1,0 +1,6 @@
+@CreatePersonAPI_HostAddress = http://localhost:5294
+
+GET {{CreatePersonAPI_HostAddress}}
+Accept: application/json
+
+###
