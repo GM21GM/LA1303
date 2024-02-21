@@ -97,12 +97,12 @@ Eine API welche autmoatisch Personen erstellen soll, diese sollen gespeichert we
 
 ### Testprotokoll
 
-| TC-№ | Datum | Resultat | Tester |Testumgebung|Kommentar|
-| ---- | ----- | -------- | -------- |Swagger||
-| 1.1 | 21.02 | OK | Giuliano |Swagger||
-| 2.1 | 21.02 | OK | Giuliano |Swagger||
-| 2.2 | 21.02 | OK | Giuliano |Swagger||
-| 3.1 | 21.02 | NOK | Giuliano |Swagger|Put funktioniert nicht, Fehler konnte nicht behoben werden.|
-| 4.1 | 21.02 | OK | Giuliano |Swagger||
-| 5.1 | 21.02 | OK | Giuliano |Swagger + Microsoft SQL||
-| 6.1 | 21.02 | OK | Giuliano |Swagger||
+| TC-№ | Datum | Resultat | Tester   | Testumgebung            | Kommentar                                                   |
+| ---- | ----- | -------- | -------- | ----------------------- | ----------------------------------------------------------- |
+| 1.1  | 21.02 | OK       | Giuliano | Swagger                 |                                                             |
+| 2.1  | 21.02 | OK       | Giuliano | Swagger                 |                                                             |
+| 2.2  | 21.02 | OK       | Giuliano | Swagger                 |                                                             |
+| 3.1  | 21.02 | NOK      | Giuliano | Swagger                 | Put funktioniert nicht, Fehler konnte nicht behoben werden. |
+| 4.1  | 21.02 | OK       | Giuliano | Swagger                 |                                                             |
+| 5.1  | 21.02 | OK       | Giuliano | Swagger + Microsoft SQL |                                                             |
+| 6.1  | 21.02 | OK       | Giuliano | Swagger                 |                                                             |
