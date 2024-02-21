@@ -4,12 +4,11 @@ Unity 2D Street Fighter
 
 Giovanni Innamorato, Giuliano Martullo, Steven Salie
 
-| Datum    | Version | Zusammenfassung                                         |
-| -------- | ------- | ------------------------------------------------------- |
-| 24.01.24 | 0.0.1   | API kann einen neu erstellten Namen als response geben. |
-| 18.10.23 | 0.0.2   |                                                         |
-| 25.10.23 | 0.1     |                                                         |
-| 01.11.23 | 1.0.0   |                                                         |
+| Datum    | Version | Zusammenfassung                                                                                      |
+| -------- | ------- | ---------------------------------------------------------------------------------------------------- |
+| 24.01.24 | 0.0.1   | API kann einen neu erstellten Namen als response geben. Personen werden in der Datenbank gespeichert |
+| 14.02.24 | 0.0.2   | API kann Post anfragen und Personen nach Id gefiltert zurückgeben                                    |
+| 21.02.24 | 1.0.0   | API kann alle HTTP Methoden handeln.                                                                 |
 
 ## 1 Informieren
 
@@ -30,15 +29,37 @@ Wir erstellen eine API die Namen zufällig zusammenstellt, sie speichert und ver
 
 ### 1.3 Testfälle
 
-| TC-№ | Ausgangslage     | Eingabe                                         | Erwartete Ausgabe                                                |
-| ---- | ---------------- | ----------------------------------------------- | ---------------------------------------------------------------- |
-| 1.1  | Das Spiel läuft. | Der Spieler versucht, den Charakter zu bewegen. | Der Charakter bewegt sich entsprechend der Eingabe des Spielers. |
+| TC-№ | Ausgangslage                           | Eingabe | Erwartete Ausgabe |
+| ---- | -------------------------------------- | ------- | ----------------- |
+| 1.1  | API gestartet, Swagger / Postman offen |         |                   |
 
 ## 2 Planen
 
-| AP-№ | Frist    | Zuständig | Beschreibung                                                                                        | geplante Zeit |
-| ---- | -------- | --------- | --------------------------------------------------------------------------------------------------- | ------------- |
-| 1.A  | 20.09.23 | Giovanni  | Implementierung des grundlegenden Player-Movements, einschliesslich Bewegung nach links und rechts. | 180'          |
+| AP-№ | Frist    | Zuständig         | Beschreibung                             | geplante Zeit |
+| ---- | -------- | ----------------- | ---------------------------------------- | ------------- |
+| 1.A  | 10.01.24 | Giovanni Giuliano | Projektbeschluss                         | 90'           |
+| 1.A  | 10.01.24 | Giuliano          | Repository aufstellen.                   | 45'           |
+| 1.A  | 10.01.24 | Giovanni Giuliano | Informieren                              | 45'           |
+| 1.A  | 10.01.24 | Giuliano          | Userstorys                               | 90'           |
+| 1.A  | 10.01.24 | Giovanni          | Testfälle                                | 90'           |
+| 1.A  | 17.01.24 | Giovanni          | Arbeitspakete                            | 90'           |
+| 1.A  | 17.01.24 | Giuliano          | Projekt erstellen                        | 90'           |
+| 1.A  | 17.01.24 | Giovanni          | benötigte Erweiterungen auflisten        | 45'           |
+| 1.A  | 17.01.24 | Giuliano          | Projekt Umgebung einstellen              | 45'           |
+| 1.A  | 17.01.24 | Giuliano          | SQL Server verbindung herstellen         | 45'           |
+| 1.A  | 17.01.24 | Giuliano          | Datenbank modell erstellen               | 45'           |
+| 1.A  | 17.01.24 | Giovanni          | Personen generator implementieren        | 90'           |
+| 1.A  | 24.01.24 | Giovanni          | Personen generator implementieren        | 90'           |
+| 1.A  | 24.01.24 | Giuliano          | Post und Get Methoden implementieren     | 135'          |
+| 1.A  | 24.01.24 | Giovanni          | Get Mehtode nach id filtern              | 90'           |
+| 1.A  | 24.01.24 | Giovanni          | Personen Generator testen und optimieren | 45'           |
+| 1.A  | 24.01.24 | Giuliano          | Post und Get Methoden testen             | 45'           |
+| 1.A  | 24.01.24 | Giuliano          | Git Repo auf Visual Studio einrichten    | 45'           |
+| 1.A  | 14.02.24 | Giovanni          | Delete Methode implementieren und testen | 90'           |
+| 1.A  | 14.02.24 | Giuliano          | Applikation Testen und Debuggen          | 135'          |
+| 1.A  | 14.02.24 | Giovanni          | Code überarbeiten und verbessern         | 90'           |
+| 1.A  | 14.02.24 | Giuliano Giovanni | Review                                   | 45'           |
+| 1.A  | 21.02.24 | Giovanni Giuliano | Portfolio Beitrag schreiben              | 225'          |
 
 ## 3 Realisieren
 
